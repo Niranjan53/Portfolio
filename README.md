@@ -3,7 +3,7 @@
 
 <!-- Banner -->
 <p align="center">
-  <img src="banner.png" alt="Niranjan S — Full Stack Developer Banner" width="100%">
+  <img src="banner.png" alt="Niranjan S — Full Stack Developer Banner" width="50%">
 </p>
 
 # 🌐 Personal Portfolio Website — Niranjan S
