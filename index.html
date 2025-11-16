@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Niranjan S — Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav id="desktop-nav" class="nav">
+    <div class="logo">Niranjan S — Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MOBILE HAMBURGER -->
+  <nav id="hamburger-nav" class="nav mobile-hidden">
+    <div class="logo">Niranjan S</div>
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="mobile-menu hidden">
+    <ul>
+      <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HOME / HERO -->
+  <main>
+    <section id="home" class="section profile">
+      <!-- Reel BG overlays (noise + vignette) -->
+      <div class="reel-bg">
+        <div class="reel-bg__noise"></div>
+        <div class="reel-bg__vignette"></div>
+      </div>
+      <div class="edge-accent" aria-hidden="true"></div>
+
+      <div class="about-containers">
+        <div class="profile-photo">
+          <div class="avatar-wrapper">
+            <img class="profile-img" src="assets/profile.png" alt="Niranjan Cartoon Avatar">
+          </div>
+        </div>
+
+        <div class="profile-info">
+          <p class="small">Hello, I'm</p>
+          <h1 class="name">Niranjan S</h1>
+          <h3 class="title">A Passionate Full Stack Developer</h3>
+
+          <div class="cta">
+            <a class="btn btn-outline" href="#" download>Download CV</a>
+            <a class="btn btn-outline" href="#contact">Contact Info</a>
+          </div>
+
+          <div class="socials">
+            <a class="social-link" href="https://www.linkedin.com/in/niranjan-s-603405304" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a class="social-link" href="https://github.com/Niranjan53" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="assets/icons/github.svg" alt="GitHub">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT (same content you asked for) -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-content" style="max-width:var(--max-width); margin:0 auto; padding:2rem 1rem; display:flex; gap:2rem; align-items:flex-start; flex-wrap:wrap;">
+        <div style="flex:0 0 320px;">
+          <div class="profile-photo">
+            <div class="avatar-wrapper">
+                <img class="profile-img" src="assets/image.jpg" alt="Niranjan profile">
+            </div>
+          </div>
+        </div>
+
+        <div style="flex:1; min-width:260px;">
+          <p class="muted">
+            Hi I'm <strong>Niranjan S</strong>, a passionate Full Stack Developer who loves building visually appealing and functional web applications.
+            I work with HTML, CSS, JavaScript and I have experience with Java, Python and MongoDB, SQL.
+          </p>
+
+          <p class="muted" style="margin-top:1rem;">
+            I enjoy working across the full stack development — designing responsive interfaces, implementing backend logic, managing databases, and ensuring smooth user experiences.
+            I’m actively expanding my full-stack knowledge and building projects that highlight clean design, strong performance, and modern development practices.
+          </p>
+
+          <div style="margin-top:1.2rem;">
+            <a class="btn btn-outline" href="#projects">See Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <div class="section-header">
+        <p class="small">Explore My</p>
+        <h2>Experience</h2>
+      </div>
+
+      <div class="experience-cards">
+        <div class="card">
+          <h3>Frontend Development</h3>
+          <ul class="skill-list">
+            <li><span class="medal">🏅</span><strong>HTML</strong><small>Experienced</small></li>
+            <li><span class="medal">🏅</span><strong>CSS</strong><small>Experienced</small></li>
+            <li><span class="medal">🏅</span><strong>JavaScript</strong><small>Basic</small></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Programming Languages</h3>
+          <ul class="skill-list">
+            <li><span class="medal">🏅</span><strong>Java</strong><small>Basic</small></li>
+            <li><span class="medal">🏅</span><strong>Python</strong><small>Basic</small></li>
+            <li><span class="medal">🏅</span><strong>C</strong><small>Basic</small></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Database Management</h3>
+          <ul class="skill-list">
+            <li><span class="medal">🏅</span><strong>MongoDB</strong><small>Basic</small></li>
+            <li><span class="medal">🏅</span><strong>MySQL</strong><small>Basic</small></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Tools</h3>
+          <ul class="skill-list">
+            <li><span class="medal">🏅</span><strong>Git</strong><small>Experienced</small></li>
+            <li><span class="medal">🏅</span><strong>Github</strong><small>Experienced</small></li>
+            <li><span class="medal">🏅</span><strong>VS code</strong><small>Experienced</small></li>
+            <li><span class="medal">🏅</span><strong>Postman</strong><small>Basic</small></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (placeholder) -->
+    <section id="projects" class="section projects">
+      <div class="section-header"><h2>Projects</h2></div>
+      <p class="muted" style="text-align:center;">Add your project cards or links here.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="section-header"><h2>Contact</h2></div>
+
+        <div class="contact-grid">
+
+        <!-- LEFT CONTACT CARD -->
+        <div class="contact-card">
+            <div class="contact-card-inner">
+                <h3>Get in touch</h3>
+
+        <!-- EMAIL -->
+        <div class="contact-item">
+            <button id="showEmailBtn" class="icon-button">
+                <img src="assets/icons/email.svg" class="contact-icon" alt="Email Icon">
+            </button>
+
+            <div class="contact-text">
+                <div class="label">Email</div>
+                    <a id="emailDisplay" href="mailto:niranjans5812@example.com" class="hidden-info">
+                        niranjans5812@example.com
+                    </a>
+                </div>
+            </div>
+
+        <!-- PHONE -->
+        <div class="contact-item">
+          <button id="showPhoneBtn" class="icon-button">
+            <img src="assets/icons/phone.svg" class="contact-icon" alt="Phone Icon">
+          </button>
+
+          <div class="contact-text">
+            <div class="label">Phone</div>
+            <a id="phoneDisplay" href="tel:8147772243" class="hidden-info">
+              +91 81477 72243
+            </a>
+          </div>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="contact-socials">
+          <a class="social-link" href="https://www.linkedin.com/in/niranjan-s-603405304" target="_blank">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+          </a>
+          <a class="social-link" href="https://github.com/Niranjan53" target="_blank">
+            <img src="assets/icons/github.svg" alt="GitHub">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/_niranjan_s___?igsh=Nm14NGdzcXY2ZXE2" target="_blank">
+            <img src="assets/icons/instagram.svg" alt="Instagram">
+          </a>
+        </div>
+
+        <div class="contact-buttons">
+          <a class="btn btn-outline" href="mailto:niranjans5812@example.com">Email Me</a>
+          <a class="btn btn-outline" href="tel:8147772243">Call Me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT CONTACT FORM -->
+    <div class="contact-form-card">
+      <form id="contactForm" class="contact-form" autocomplete="off" novalidate>
+
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-outline">Send Message</button>
+          <button type="button" id="resetBtn" class="btn btn-outline">Reset</button>
+        </div>
+
+        <p id="contactFormMsg" class="form-msg" aria-live="polite"></p>
+       </form>
+      </div>
+
+      </div>
+   </section>
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

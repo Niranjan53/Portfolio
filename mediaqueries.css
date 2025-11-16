@@ -1,0 +1,13 @@
+@media screen and (max-width: 700px) {
+  .name { font-size:2.1rem; }
+  .profile-photo img { width:180px; height:180px; }
+  .nav { margin: 1rem auto; }
+  .btn { padding: 0.55rem 1rem; }
+  .card { padding:1.2rem; border-radius:18px; }
+  .logo { font-size:1.2rem; }
+}
+
+@media screen and (min-width:1600px) {
+  .profile-photo img { width:360px; height:360px; }
+  .name { font-size:4rem; }
+}
